@@ -1,0 +1,67 @@
+
+{% extends "index.html" %}
+  <!-- Navbar -->
+ {% block  body  %}
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5 mb-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">About Us</h1>
+      <p class="lead mb-0">Learn more about our mission, vision, and team.</p>
+    </div>
+  </header>
+
+  <!-- About Content -->
+  <section class="container mb-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=700&q=80" alt="About Us" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4">Our Mission</h2>
+        <p>At MyCompany, our mission is to provide innovative solutions that empower businesses to succeed in a rapidly changing digital world. We focus on quality, integrity, and customer satisfaction.</p>
+        <h2 class="mt-4 mb-4">Our Vision</h2>
+        <p>We envision a future where technology simplifies business challenges and opens new opportunities for growth and collaboration worldwide.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Meet Our Team</h2>
+      <div class="row g-4 justify-content-center">
+        <!-- Team Member -->
+        <div class="col-6 col-md-3 text-center team-member">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe" />
+          <h5>John Doe</h5>
+          <p class="text-muted">CEO</p>
+        </div>
+        <div class="col-6 col-md-3 text-center team-member">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith" />
+          <h5>Jane Smith</h5>
+          <p class="text-muted">CTO</p>
+        </div>
+        <div class="col-6 col-md-3 text-center team-member">
+          <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Michael Lee" />
+          <h5>Michael Lee</h5>
+          <p class="text-muted">Lead Developer</p>
+        </div>
+        <div class="col-6 col-md-3 text-center team-member">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sarah Brown" />
+          <h5>Sarah Brown</h5>
+          <p class="text-muted">Marketing Head</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-5">
+    <div class="container">
+      <h3>Ready to work with us?</h3>
+      <a href="contact.html" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+    </div>
+  </section>
+
+{% endblock body %}
+ 
