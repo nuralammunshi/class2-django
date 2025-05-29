@@ -38,10 +38,11 @@
         <div class="card shadow-sm border-0">
           <div class="card-body">
             <h4 class="card-title mb-4 text-center">Add Student</h4>
-            <form method="post">
+            <form action='' method="POST">
+              {% csrf_token %}
               <div class="mb-3">
                 <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+                <input type="text" class="form-control" id="name" name="studenName" required>
               </div>
               <div class="mb-3">
                 <label for="department" class="form-label">Department</label>
@@ -49,11 +50,11 @@
               </div>
               <div class="mb-3">
                 <label for="city" class="form-label">City</label>
-                <input type="text" class="form-control" id="city" name="city" required>
+                <input type="text" class="form-control" id="city" name="studentCity" required>
               </div>
                <div class="mb-3">
-                <label for="city" class="form-label">Age</label>
-                <input type="date" class="form-control" id="city" name="city" required>
+                <label for="age" class="form-label">Age</label>
+                <input type="date" class="form-control" id="age" name="studentAge" required>
               </div>
               <div class="d-grid">
                 <button type="submit" class="btn btn-primary">Submit</button>

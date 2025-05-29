@@ -1,15 +1,23 @@
-from django.shortcuts import render
+from django.shortcuts import render ,redirect
 from myApp.models import *
 
 def homepage(req):
+    if req.method=='POST':
+        studenName =req.POST.get('studenName')
+        department =req.POST.get('department')
+        studentCity =req.POST.get('studentCity')
+        studentAge =req.POST.get('studentAge')
+
+        studentAdd =studentModel(
+            name =studenName ,
+            department =department,
+            city =studentCity,
+            age  =studentAge,
+        )
+        studentAdd.save()
+        return redirect('studentList')
     return render (req ,'index.html')
 
-# def studenttable(req):
-#     name =studentModel.objects.all()
-#     context = {
-#         "studentData" : name,
-#     }
-#     return render (req,'studenttabel.html', context)
 
 
 def loginpage(req):
